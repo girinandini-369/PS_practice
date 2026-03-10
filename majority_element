@@ -1,0 +1,50 @@
+class Solution {
+    public ArrayList<Integer> findMajority(int[] arr) {
+        int leader1=0,count1=0;
+        int leader2=0,count2=0;
+        int n=arr.length;
+        //voting
+        for(int x:arr)
+        {
+            if(x==leader1)
+            {
+                count1++;
+            }
+            else if(x==leader2)
+            {
+                count2++;
+            }
+            else if(count1==0)
+            {
+                leader1=x;
+                count1++;
+            }
+            else if(count2==0)
+            {
+                leader2=x;
+                count2++;
+            }
+            else
+            {
+                count1--;
+                count2--;
+            }
+        }
+        //counting
+        count1=0;
+        count2=0;
+        for(int x:arr)
+        {
+            if(x==leader1)count1++;
+            if(x==leader2)count2++;
+            
+        }
+        ArrayList<Integer>ans=new ArrayList<>();
+        int thershold=n/3;
+        if(count1>thershold)ans.add(leader1);
+        if(count2>thershold)ans.add(leader2);
+        Collections.sort(ans);
+        return ans;
+        
+    }
+}
