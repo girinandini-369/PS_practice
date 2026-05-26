@@ -7,21 +7,26 @@ class Solution {
             char ch=word.charAt(i);
             if(Character.isLowerCase(ch))
             {
-                if(!map.containsKey(ch))
+                if(!map.containsKey(Character.toUpperCase(ch))&& !map.containsKey(ch))
                 {
                     map.put(ch,map.getOrDefault(ch,0)+1);
                 }
+                else if(map.containsKey(Character.toUpperCase(ch))){
+                    c++;
+                }
             }
-            else if(Character.isUpperCase(ch))
-            {
-               
-                if(map.containsKey(Character.toLowerCase(ch)))
+            else{
+                if(!map.containsKey(Character.toLowerCase(ch)))
                 {
+                    map.put(ch,map.getOrDefault(ch,0)+1);
+                }
+                else{
                     c++;
                 }
             }
         }
         return c;
+       
         
     }
 }
