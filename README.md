@@ -39,6 +39,17 @@ A professionally structured collection of topic-wise DSA solutions, optimized co
 </details>
 
 
+### Hash Table
+<details>
+<summary>Click to expand Hash Table problems</summary>
+
+| # | Problem | Difficulty |
+|---|---------|------------|
+| 3120 | [Count the Number of Special Characters I](./Hash%20Table/Count%20the%20Number%20of%20Special%20Characters%20I/) | Easy |
+
+</details>
+
+
 <p align="center">
 Building Technical Excellence Through Consistent Problem Solving.
 </p>
