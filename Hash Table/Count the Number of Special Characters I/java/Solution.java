@@ -1,32 +1,31 @@
 class Solution {
     public int numberOfSpecialChars(String word) {
-        int c=0;
-        HashMap<Character,Integer>map=new HashMap<>();
-        for(int i=0;i<word.length();i++)
-        {
+        HashSet<Character>set1=new HashSet<>();
+         HashSet<Character>set2=new HashSet<>();
+         for(int i=0;i<word.length();i++)
+         {
             char ch=word.charAt(i);
             if(Character.isLowerCase(ch))
             {
-                if(!map.containsKey(Character.toUpperCase(ch))&& !map.containsKey(ch))
-                {
-                    map.put(ch,map.getOrDefault(ch,0)+1);
-                }
-                else if(map.containsKey(Character.toUpperCase(ch))){
-                    c++;
-                }
+                set1.add(ch);
             }
-            else{
-                if(!map.containsKey(Character.toLowerCase(ch)))
-                {
-                    map.put(ch,map.getOrDefault(ch,0)+1);
-                }
-                else{
-                    c++;
-                }
+            if(Character.isUpperCase(ch))
+            {
+                set2.add(ch);
             }
-        }
-        return c;
+         }
+         int c=0;
+         for(char cr:set1)
+         {
+            if(set2.contains(Character.toUpperCase(cr)))
+            {
+                c++;
+            }
+         } 
+                 return c;
+        
        
+      
         
     }
 }
