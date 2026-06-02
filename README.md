@@ -29,6 +29,7 @@ A professionally structured collection of topic-wise DSA solutions, optimized co
 | # | Problem | Difficulty |
 |---|---------|------------|
 | 175 | [Combine Two Tables](./Database/Combine%20Two%20Tables/) | Easy |
+| 181 | [Employees Earning More Than Their Managers](./Database/Employees%20Earning%20More%20Than%20Their%20Managers/) | Easy |
 | 197 | [Rising Temperature](./Database/Rising%20Temperature/) | Easy |
 | 570 | [Managers with at Least 5 Direct Reports](./Database/Managers%20with%20at%20Least%205%20Direct%20Reports/) | Medium |
 | 577 | [Employee Bonus](./Database/Employee%20Bonus/) | Easy |
