@@ -5,9 +5,8 @@
 
 ## Problem Statement
 
-<p>Table: <code>Employee</code></p>
+Table: Employee
 
-<pre>
 +-------------+---------+
 | Column Name | Type    |
 +-------------+---------+
@@ -18,13 +17,12 @@
 +-------------+---------+
 empId is the column with unique values for this table.
 Each row of this table indicates the name and the ID of an employee in addition to their salary and the id of their manager.
-</pre>
 
-<p>&nbsp;</p>
 
-<p>Table: <code>Bonus</code></p>
+ 
 
-<pre>
+Table: Bonus
+
 +-------------+------+
 | Column Name | Type |
 +-------------+------+
@@ -34,26 +32,25 @@ Each row of this table indicates the name and the ID of an employee in addition 
 empId is the column of unique values for this table.
 empId is a foreign key (reference column) to empId from the Employee table.
 Each row of this table contains the id of an employee and their respective bonus.
-</pre>
 
-<p>&nbsp;</p>
 
-<p>Write a solution to report the name and bonus amount of each employee who satisfies either of the following:</p>
+ 
 
-<ul>
-	<li>The employee has a bonus <strong>less than</strong> <code>1000</code>.</li>
-	<li>The employee did not get any bonus.</li>
-</ul>
+Write a solution to report the name and bonus amount of each employee who satisfies either of the following:
 
-<p>Return the result table in <strong>any order</strong>.</p>
 
-<p>The&nbsp;result format is in the following example.</p>
+	The employee has a bonus less than 1000.
+	The employee did not get any bonus.
 
-<p>&nbsp;</p>
-<p><strong class="example">Example 1:</strong></p>
 
-<pre>
-<strong>Input:</strong> 
+Return the result table in any order.
+
+The result format is in the following example.
+
+ 
+Example 1:
+
+Input: 
 Employee table:
 +-------+--------+------------+--------+
 | empId | name   | supervisor | salary |
@@ -70,7 +67,7 @@ Bonus table:
 | 2     | 500   |
 | 4     | 2000  |
 +-------+-------+
-<strong>Output:</strong> 
+Output: 
 +------+-------+
 | name | bonus |
 +------+-------+
@@ -78,8 +75,36 @@ Bonus table:
 | John | null  |
 | Dan  | 500   |
 +------+-------+
-</pre>
 
+## Examples
+
+```
+Input: 
+Employee table:
++-------+--------+------------+--------+
+| empId | name   | supervisor | salary |
++-------+--------+------------+--------+
+| 3     | Brad   | null       | 4000   |
+| 1     | John   | 3          | 1000   |
+| 2     | Dan    | 3          | 2000   |
+| 4     | Thomas | 3          | 4000   |
++-------+--------+------------+--------+
+Bonus table:
++-------+-------+
+| empId | bonus |
++-------+-------+
+| 2     | 500   |
+| 4     | 2000  |
++-------+-------+
+Output: 
++------+-------+
+| name | bonus |
++------+-------+
+| Brad | null  |
+| John | null  |
+| Dan  | 500   |
++------+-------+
+```
 
 ---
 *Synced automatically with [AlgoVault](https://github.com/mr-sanjai-offl/AlgoVault)*
