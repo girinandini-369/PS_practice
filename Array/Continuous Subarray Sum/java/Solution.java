@@ -9,7 +9,7 @@ class Solution {
             for(int j=i;j<n;j++)
             {
               sum=sum+arr[j];
-             // if(sum==k)
+              // if(sum==k)
               //{
                 if(len>=2)
                 {
@@ -18,7 +18,7 @@ class Solution {
                         return true;
                     }
                 }
-             // }
+              //}
               len++;
             }
         }
