@@ -67,6 +67,7 @@ A professionally structured collection of topic-wise DSA solutions, optimized co
 
 | # | Problem | Difficulty |
 |---|---------|------------|
+| 3 | [Longest Substring Without Repeating Characters](./Hash%20Table/Longest%20Substring%20Without%20Repeating%20Characters/) | Medium |
 | 3120 | [Count the Number of Special Characters I](./Hash%20Table/Count%20the%20Number%20of%20Special%20Characters%20I/) | Easy |
 
 </details>
