@@ -1,0 +1,16 @@
+        for(int i=0;i<k;i++)
+        {
+            wsum+=nums[i];
+        }
+        for(int j=k;j<n;j++)
+        {
+            wsum=wsum+nums[j]-nums[j-k];
+        }
+
+        double maxsum=wsum;
+            maxsum=Math.max(maxsum,wsum);
+        double wsum=0;
+        return maxsum/k;
+        
+    }
+}
