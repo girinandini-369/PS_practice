@@ -26,6 +26,7 @@ A professionally structured collection of topic-wise DSA solutions, optimized co
 | 643 | [Maximum Average Subarray I](./Array/Maximum%20Average%20Subarray%20I/) | Easy |
 | 962 | [Maximum Width Ramp](./Array/Maximum%20Width%20Ramp/) | Medium |
 | 2161 | [Partition Array According to Given Pivot](./Array/Partition%20Array%20According%20to%20Given%20Pivot/) | Medium |
+| 3005 | [Count Elements With Maximum Frequency](./Array/Count%20Elements%20With%20Maximum%20Frequency/) | Easy |
 
 </details>
 
