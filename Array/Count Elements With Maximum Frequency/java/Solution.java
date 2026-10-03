@@ -7,18 +7,16 @@ class Solution {
             map.put(i,map.getOrDefault(i,0)+1);
         }
         int ans=0;
-        //int max=0;
-        int max=map.get(nums[0]);
-        for(int i:nums)
+        int max=0;
+        for(int i:map.values())
         {
-            if(!set.contains(i))
+            max=Math.max(max,i);
+        }
+        for(int i:map.keySet())
+        {
+            if(map.get(i)==max)
             {
-                set.add(i);
-              
-                if(map.get(i)>=max)
-                {
-                    ans+=map.get(i);
-                }
+                ans+=map.get(i);
             }
         }
         return ans;
